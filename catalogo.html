@@ -1,0 +1,30 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Catálogo | Mi Apple BSB</title>
+<meta name="description" content="Catálogo completo de celulares novos e seminovos com filtro e atendimento via WhatsApp.">
+<link rel="stylesheet" href="assets/css/styles.css"></head><body>
+<div id="siteHeader"></div>
+<main class="section"><div class="container">
+<h1 class="section-title">Catálogo completo</h1><p class="section-subtitle">Use busca e filtros para encontrar seu próximo aparelho.</p>
+<div class="catalog-controls" role="search">
+  <input id="search" type="search" placeholder="Buscar por marca, modelo, nome..." aria-label="Buscar produto">
+  <select id="fMarca"><option value="">Marca</option><option>Apple</option><option>Samsung</option><option>Xiaomi</option><option>Motorola</option></select>
+  <select id="fModelo"><option value="">Modelo</option></select>
+  <select id="fCondicao"><option value="">Condição</option><option>Novo</option><option>Seminovo</option></select>
+  <select id="fPreco"><option value="">Faixa de preço</option><option value="0-2000">Até R$2.000</option><option value="2000-4000">R$2.000 a R$4.000</option><option value="4000+">Acima de R$4.000</option></select>
+  <select id="fArmazenamento"><option value="">Armazenamento</option></select>
+  <input id="fCor" placeholder="Cor" aria-label="Cor">
+  <select id="fOrdenar"><option value="menor-preco">Menor preço</option><option value="maior-preco">Maior preço</option><option value="mais-recente">Mais recente</option></select>
+</div>
+<div id="productsGrid" class="products-grid"></div>
+<div class="pagination-wrap"><button id="loadMore" class="btn btn-outline">Carregar mais</button></div>
+
+<section id="acessorios" class="section">
+<h2 class="section-title">Acessórios e extras</h2>
+<p class="section-subtitle">Também temos acessórios originais e selecionados. Fale com a equipe no WhatsApp para disponibilidade imediata.</p>
+<a class="btn btn-whatsapp" href="https://wa.me/5561999999999?text=Olá! Quero ver acessórios disponíveis agora." target="_blank" rel="noopener">Ver acessórios no WhatsApp</a>
+</section>
+</div></main>
+<div id="siteFooter"></div>
+<script src="assets/js/app.js"></script><script src="assets/js/catalogo.js"></script>
+</body></html>
