@@ -1,0 +1,31 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Compra Seu Usado e Trocas | Mi Apple BSB</title>
+<meta name="description" content="Venda seu celular usado ou faça troca com avaliação rápida via WhatsApp."><link rel="stylesheet" href="assets/css/styles.css"></head><body>
+<div id="siteHeader"></div>
+<main class="section"><div class="container">
+<h1 class="section-title">Venda seu usado com avaliação rápida</h1><p class="section-subtitle">Preencha os dados abaixo e enviaremos proposta no WhatsApp.</p>
+<div class="form-card"><form id="vendaForm" class="form-grid">
+<input name="modelo" placeholder="Modelo do aparelho" required>
+<select name="armazenamento" required><option value="">Armazenamento</option><option>64GB</option><option>128GB</option><option>256GB</option><option>512GB</option></select>
+<select name="condicao" required><option value="">Condição geral</option><option>Excelente</option><option>Muito bom</option><option>Bom</option><option>Com detalhes</option></select>
+<input name="bateria" placeholder="Saúde da bateria (%) - se souber">
+<textarea name="detalhes" placeholder="Detalhes, acessórios, tempo de uso..."></textarea>
+<input name="fotos" placeholder="Links das fotos (Google Drive, etc.)">
+<button class="btn btn-whatsapp" type="submit">Quero vender meu usado no WhatsApp</button>
+</form><p class="small">Instrução: envie fotos da frente, traseira, laterais e tela ligada para avaliação mais rápida.</p></div>
+
+<section id="trocas" class="section"><h2 class="section-title">Trocas (seu usado como entrada)</h2><div class="steps">
+<div class="step"><b>1.</b> Envie os dados do seu aparelho.</div><div class="step"><b>2.</b> Receba avaliação preliminar.</div><div class="step"><b>3.</b> Escolha um aparelho do catálogo.</div><div class="step"><b>4.</b> Ajuste a diferença e finalize.</div>
+</div><br><a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/5561999999999?text=Olá! Quero fazer uma troca com meu usado.">Quero fazer troca</a></section>
+</div></main>
+<div id="siteFooter"></div>
+<script src="assets/js/app.js"></script>
+<script>
+document.getElementById('vendaForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const msg = `Olá! Quero vender meu usado na Mi Apple BSB.%0AModelo: ${fd.get('modelo')}%0AArmazenamento: ${fd.get('armazenamento')}%0ACondição: ${fd.get('condicao')}%0ABateria: ${fd.get('bateria')}%0ADetalhes: ${fd.get('detalhes')}%0AFotos: ${fd.get('fotos')}`;
+  location.href = `https://wa.me/5561999999999?text=${msg}`;
+});
+</script>
+</body></html>
